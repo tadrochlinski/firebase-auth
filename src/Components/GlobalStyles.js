@@ -6,5 +6,15 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Mukta', sans-serif;
+
+        body{
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        #root{
+            width: 100%;
+            height: 100%;
+        }
     }
 `
