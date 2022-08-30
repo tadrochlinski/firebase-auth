@@ -1,6 +1,7 @@
 import React from 'react'
 import RegisterWrapper from './RegisterWrapper'
 import { Link } from 'react-router-dom'
+import Button from '../../Components/Button'
 
 const Register = () =>{
   return (
@@ -12,7 +13,7 @@ const Register = () =>{
           <input type="password" placeholder="password"/>
           <div>
             <Link to="../login">Already have an account?</Link>
-            <button>Register</button>
+            <Button>Register</Button>
           </div>
         </form>
       </div>

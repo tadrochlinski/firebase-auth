@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import LoginWrapper from './LoginWrapper'
+import Button from '../../Components/Button'
 
 const Login = () =>{
   return (
@@ -12,7 +13,7 @@ const Login = () =>{
           <input type="password" placeholder="password"/>
           <div>
             <Link to="../register">Create new account</Link>
-            <button>Log In</button>
+            <Button>Log In</Button>
           </div>
         </form>
       </div>
