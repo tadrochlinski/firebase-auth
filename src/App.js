@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
-import Register from './Pages/Register';
+import Register from './Pages/Register/Register';
 import Login from './Pages/Login/Login';
 import GlobalStyles from './Components/GlobalStyles';
 
