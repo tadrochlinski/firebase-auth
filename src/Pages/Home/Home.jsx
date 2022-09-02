@@ -8,6 +8,7 @@ const Home = () =>{
       <div>
         <h1>Home</h1>
         <form>
+          <p>email@email.com</p>
           <Button>Log out</Button>
         </form>
       </div>

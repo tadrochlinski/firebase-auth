@@ -22,6 +22,11 @@ const PageWrapper = styled.div`
         border-radius: 5px;
         padding: 20px;
 
+        span{
+            color: #e10000;
+            margin-bottom: 10px;
+        }
+
         div{
             width: 100%;
             display: flex;
