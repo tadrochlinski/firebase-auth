@@ -4,6 +4,7 @@ import Register from './Pages/Register/Register';
 import Login from './Pages/Login/Login';
 import GlobalStyles from './Components/GlobalStyles';
 import { AuthContextProvider } from './Context/AuthContext';
+import ProtectedRoute from './Components/ProtectedRoute';
 
 const App = () =>{
   return (
@@ -13,7 +14,7 @@ const App = () =>{
         <Routes>
           <Route path="/login" element={<Login/>}></Route>
           <Route path="/signup" element={<Register/>}></Route>
-          <Route path="/" element={<Home/>}></Route>
+          <Route path="/" element={<ProtectedRoute><Home/></ProtectedRoute>}></Route>
         </Routes>
       </AuthContextProvider>
     </>
