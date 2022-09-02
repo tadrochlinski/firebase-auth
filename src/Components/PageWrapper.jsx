@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const LoginWrapper = styled.div`
+const PageWrapper = styled.div`
     width: 100%;
     height: 100vh;
     display: grid;
@@ -62,8 +62,8 @@ const LoginWrapper = styled.div`
                 transform: scale(1.05);
                 outline: 0;
             }
-    }
+        }
     }
 `
 
-export default LoginWrapper;
+export default PageWrapper

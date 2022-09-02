@@ -1,23 +1,29 @@
 import React from 'react'
-import RegisterWrapper from './RegisterWrapper'
+import { useRef } from 'react'
+import PageWrapper from '../../Components/PageWrapper'
 import { Link } from 'react-router-dom'
 import Button from '../../Components/Button'
 
 const Register = () =>{
+  const emailRef = useRef();
+  const passRef = useRef();
+  const passConfRef = useRef();
+
   return (
-    <RegisterWrapper>
+    <PageWrapper>
       <div>
-        <h1>Register</h1>
+        <h1>Signup</h1>
         <form>
-          <input type="text" placeholder="email"/>
-          <input type="password" placeholder="password"/>
+          <input type="text" placeholder="email" ref={emailRef}/>
+          <input type="password" placeholder="password" ref={passRef}/>
+          <input type="password" placeholder="password confirmation" ref={passConfRef}/>
           <div>
             <Link to="../login">Already have an account?</Link>
-            <Button>Register</Button>
+            <Button>Sign up</Button>
           </div>
         </form>
       </div>
-    </RegisterWrapper>
+    </PageWrapper>
   )
 }
 

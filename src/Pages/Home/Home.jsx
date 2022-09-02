@@ -1,17 +1,17 @@
 import React from 'react'
 import Button from '../../Components/Button'
-import HomeWrapper from './HomeWrapper'
+import PageWrapper from '../../Components/PageWrapper'
 
 const Home = () =>{
   return (
-    <HomeWrapper>
+    <PageWrapper>
       <div>
         <h1>Home</h1>
         <form>
           <Button>Log out</Button>
         </form>
       </div>
-    </HomeWrapper>
+    </PageWrapper>
   )
 }
 

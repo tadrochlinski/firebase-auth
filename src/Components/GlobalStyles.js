@@ -11,10 +11,5 @@ export default createGlobalStyle`
             width: 100%;
             min-height: 100vh;
         }
-
-        #root{
-            width: 100%;
-            height: 100%;
-        }
     }
 `
