@@ -22,7 +22,7 @@ const Login = () =>{
       navigate('/')
     }
     catch(e){
-      setError(e.message)
+      setError('wrong email or password')
     }
 
     setLoading(false)
