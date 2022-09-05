@@ -15,6 +15,7 @@ const Login = () =>{
 
   const handleSubmit = async (e) =>{
     e.preventDefault();
+    setError('');
 
     try{
       setLoading(true)
@@ -33,12 +34,15 @@ const Login = () =>{
       <div>
         <h1>Login</h1>
         <form onSubmit={handleSubmit}>
-          {error && <span>{error}</span>}
+          {error && <div style={{flexDirection: "column", marginBottom: "10px"}}>
+            <span style={{marginBottom:"0px"}}>{error}</span>
+            <Link to="/changepassword">Forgot password?</Link>
+          </div>}
           <input type="text" placeholder="email" ref={emailRef}/>
           <input type="password" placeholder="password" ref={passwordRef}/>
           <div>
             <Link to="../signup">Create new account</Link>
-            <Button>Log In</Button>
+            <Button disabled={loading}>Log In</Button>
           </div>
         </form>
       </div>
