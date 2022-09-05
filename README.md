@@ -1,6 +1,12 @@
 # firebase v9 email and password authentication
 simple photo search application
 
+### user is able to 
+- signin
+- signup
+- signout
+- reset password
+
 ### [Go Live](https://tadrochlinski.github.io/firebase-auth/)
 
 ## Overview
@@ -12,6 +18,10 @@ To Start Server:
 To Visit App:
 
 `localhost:3000`
+
+### Test User
+- email: user@user.com
+- password: password
 
 ### Built with
 
